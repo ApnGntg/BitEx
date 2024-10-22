@@ -2,29 +2,29 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #4B0082, #00BFFF); /* Gradient biru dan ungu */
+    background: linear-gradient(to right, #4B0082, #00BFFF);
     color: white;
 }
 
 header {
-    background-color: #2E1A47; /* Warna ungu gelap untuk header */
+    background-color: #2E1A47;
     padding: 20px;
     text-align: center;
-    position: relative; /* Mengatur posisi relatif untuk penempatan hamburger */
+    position: relative;
 }
 
 h1 {
-    font-size: 2.5em; /* Ukuran font untuk judul */
-    margin: 0; /* Menghilangkan margin pada judul */
-    color: #00BFFF; /* Warna judul */
+    font-size: 2.5em;
+    margin: 0;
+    color: #00BFFF;
 }
 
 .logo {
-    width: 100px; /* Atur lebar logo sesuai kebutuhan */
-    height: auto; /* Menjaga rasio aspek logo */
-    position: absolute; /* Memungkinkan penempatan logo di pojok kiri */
-    left: 20px; /* Jarak dari kiri */
-    top: 20px; /* Jarak dari atas */
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 nav ul {
@@ -38,29 +38,29 @@ nav ul li {
 }
 
 nav a {
-    color: #00BFFF; /* Biru terang untuk tautan */
+    color: #00BFFF;
     text-decoration: none;
 }
 
 .menu-hamburger {
-    position: absolute; /* Mengatur posisi absolut untuk hamburger */
-    right: 20px; /* Jarak dari kanan */
-    top: 20px; /* Jarak dari atas */
-    font-size: 28px; /* Ukuran font untuk hamburger */
-    cursor: pointer; /* Menunjukkan pointer saat hover */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 .dropdown-menu {
-    display: none; /* Awalnya menyembunyikan dropdown menu */
-    position: absolute; /* Posisi absolut untuk dropdown */
-    right: 20px; /* Jarak dari kanan */
-    top: 60px; /* Jarak dari atas */
-    background-color: #2E1A47; /* Warna latar belakang dropdown */
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background-color: #2E1A47;
     padding: 20px;
     border-radius: 8px;
-    color: white; /* Warna teks dalam dropdown */
-    z-index: 1000; /* Memastikan dropdown muncul di atas elemen lain */
-    width: 200px; /* Lebar dropdown menu */
+    color: white;
+    z-index: 1000;
+    width: 200px;
 }
 
 .developer-profile {
@@ -77,48 +77,48 @@ nav a {
 }
 
 .dropdown-nav button {
-    background-color: #00BFFF; /* Warna biru terang untuk tombol */
+    background-color: #00BFFF;
     color: white;
     border: none;
-    padding: 10px 20px; /* Padding untuk tombol */
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%; /* Membuat tombol memenuhi lebar dropdown */
-    margin: 5px 0; /* Menambahkan jarak antara tombol */
+    width: 100%;
+    margin: 5px 0;
 }
 
 .dropdown-nav button:hover {
-    background-color: #007FFF; /* Warna lebih gelap saat hover */
+    background-color: #007FFF;
 }
 
 .content-section {
     padding: 40px 20px;
     margin: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang transparan */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
 }
 
 .modules-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Membuat kolom responsif */
-    gap: 20px; /* Jarak antar kolom */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .module {
-    background-color: rgba(255, 255, 255, 0.2); /* Latar belakang untuk setiap modul */
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    transition: transform 0.2s; /* Animasi saat hover */
+    transition: transform 0.2s;
 }
 
 .module:hover {
-    transform: scale(1.05); /* Efek zoom saat hover */
+    transform: scale(1.05);
 }
 
 button {
-    background-color: #00BFFF; /* Warna biru terang untuk tombol */
+    background-color: #00BFFF;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -128,18 +128,45 @@ button {
 }
 
 button:hover {
-    background-color: #007FFF; /* Warna lebih gelap saat hover */
+    background-color: #007FFF;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2E1A47; /* Warna ungu gelap untuk footer */
+    background-color: #2E1A47;
 }
-.avatar {
-    width: 60px;
-    height: 60px;
-    background-image: url('path_to_avatar_image.png');
-    background-size: cover;
-    border-radius: 50%;
+
+/* Media Query untuk perangkat kecil */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .modules-container {
+        grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
+    }
+
+    .module {
+        padding: 15px; /* Mengurangi padding modul */
+    }
+
+    button {
+        padding: 8px 16px; /* Mengurangi padding tombol */
+    }
+
+    .menu-hamburger {
+        font-size: 24px; /* Mengurangi ukuran hamburger */
+        right: 10px; /* Menyesuaikan posisi hamburger */
+        top: 15px; /* Menyesuaikan posisi hamburger */
+    }
+
+    .dropdown-menu {
+        width: 90%; /* Lebar dropdown lebih lebar di perangkat kecil */
+        right: 5%; /* Menjaga jarak dari tepi */
+    }
 }
