@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4B0082, #00BFFF); /* Gradient biru dan ungu */
+    color: white;
+}
+
+header {
+    background-color: #2E1A47; /* Warna ungu gelap untuk header */
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Mengatur posisi relatif untuk penempatan hamburger */
+}
+
+h1 {
+    font-size: 2.5em; /* Ukuran font untuk judul */
+    margin: 0; /* Menghilangkan margin pada judul */
+    color: #00BFFF; /* Warna judul */
+}
+
+.logo {
+    width: 100px; /* Atur lebar logo sesuai kebutuhan */
+    height: auto; /* Menjaga rasio aspek logo */
+    position: absolute; /* Memungkinkan penempatan logo di pojok kiri */
+    left: 20px; /* Jarak dari kiri */
+    top: 20px; /* Jarak dari atas */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #00BFFF; /* Biru terang untuk tautan */
+    text-decoration: none;
+}
+
+.menu-hamburger {
+    position: absolute; /* Mengatur posisi absolut untuk hamburger */
+    right: 20px; /* Jarak dari kanan */
+    top: 20px; /* Jarak dari atas */
+    font-size: 28px; /* Ukuran font untuk hamburger */
+    cursor: pointer; /* Menunjukkan pointer saat hover */
+}
+
+.dropdown-menu {
+    display: none; /* Awalnya menyembunyikan dropdown menu */
+    position: absolute; /* Posisi absolut untuk dropdown */
+    right: 20px; /* Jarak dari kanan */
+    top: 60px; /* Jarak dari atas */
+    background-color: #2E1A47; /* Warna latar belakang dropdown */
+    padding: 20px;
+    border-radius: 8px;
+    color: white; /* Warna teks dalam dropdown */
+    z-index: 1000; /* Memastikan dropdown muncul di atas elemen lain */
+    width: 200px; /* Lebar dropdown menu */
+}
+
+.developer-profile {
+    margin-bottom: 15px;
+}
+
+.dropdown-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-nav ul li {
+    margin: 10px 0;
+}
+
+.dropdown-nav button {
+    background-color: #00BFFF; /* Warna biru terang untuk tombol */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Padding untuk tombol */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Membuat tombol memenuhi lebar dropdown */
+    margin: 5px 0; /* Menambahkan jarak antara tombol */
+}
+
+.dropdown-nav button:hover {
+    background-color: #007FFF; /* Warna lebih gelap saat hover */
+}
+
+.content-section {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang transparan */
+    border-radius: 8px;
+}
+
+.modules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Membuat kolom responsif */
+    gap: 20px; /* Jarak antar kolom */
+}
+
+.module {
+    background-color: rgba(255, 255, 255, 0.2); /* Latar belakang untuk setiap modul */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s; /* Animasi saat hover */
+}
+
+.module:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+button {
+    background-color: #00BFFF; /* Warna biru terang untuk tombol */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #007FFF; /* Warna lebih gelap saat hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2E1A47; /* Warna ungu gelap untuk footer */
+}
+.avatar {
+    width: 60px;
+    height: 60px;
+    background-image: url('path_to_avatar_image.png');
+    background-size: cover;
+    border-radius: 50%;
+}
