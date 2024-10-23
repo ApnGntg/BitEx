@@ -1,0 +1,124 @@
+/* Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Untuk tampilan mobile, tampilkan menu hamburger */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Sembunyikan menu utama di tampilan kecil */
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        background-color: #f7931a;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Tampilkan menu dropdown saat tombol hamburger di-klik */
+    .dropdown-menu.show {
+        display: block;
+    }
+}
+
+/* Modul */
+.content-section {
+    padding: 50px;
+    background-color: #282828;
+    text-align: center;
+}
+
+.modules-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.module {
+    background-color: #3c3c3c;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.module h3 {
+    color: #f7931a;
+}
+
+.module p {
+    color: #bfbfbf;
+}
+
+button {
+    background-color: #f7931a;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #ffae42;
+}
+
+/* Footer */
+footer {
+    background-color: #f7931a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
